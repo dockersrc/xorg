@@ -19,8 +19,8 @@ ARG IMAGE_REPO="dockersrc/xorg"
 ARG IMAGE_VERSION="latest"
 ARG CONTAINER_VERSION=""
 
-ARG PULL_URL="casjaysdev/xorg"
-ARG DISTRO_VERSION="${IMAGE_VERSION}"
+ARG PULL_URL="debian"
+ARG DISTRO_VERSION="bookworm"
 ARG BUILD_VERSION="${BUILD_DATE}"
 
 FROM tianon/gosu:latest AS gosu
