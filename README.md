@@ -19,7 +19,7 @@ dockermgr update xorg
 ## Install and run container
   
 ```shell
-dockerHome="/var/lib/srv/$USER/docker/casjaysdevdocker/xorg/latest/volumes"
+dockerHome="/srv/$USER/docker/casjaysdevdocker/xorg/latest/volumes"
 mkdir -p "$dockerHome"
 git clone "https://github.com/dockermgr/xorg" "$HOME/.local/share/CasjaysDev/dockermgr/xorg"
 cp -Rfva "$HOME/.local/share/CasjaysDev/dockermgr/xorg/volumes/." "$dockerHome/"
@@ -46,8 +46,8 @@ services:
       - TZ=America/New_York
       - HOSTNAME=xorg
     volumes:
-      - "/var/lib/srv/$USER/docker/casjaysdevdocker/xorg/latest/volumes/data:/data:z"
-      - "/var/lib/srv/$USER/docker/casjaysdevdocker/xorg/latest/volumes/config:/config:z"
+      - "/srv/$USER/docker/casjaysdevdocker/xorg/latest/volumes/data:/data:z"
+      - "/srv/$USER/docker/casjaysdevdocker/xorg/latest/volumes/config:/config:z"
     ports:
       - 80:80
     restart: always
