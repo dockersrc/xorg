@@ -15,7 +15,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG SERVICE_PORT=""
 ARG EXPOSE_PORTS=""
 
-ARG IMAGE_REPO="dockersrc/xorg"
+ARG IMAGE_REPO="casjaysdev/xorg"
 ARG IMAGE_VERSION="latest"
 ARG CONTAINER_VERSION=""
 
@@ -203,8 +203,7 @@ LABEL org.opencontainers.image.authors="${LICENSE}"
 LABEL org.opencontainers.image.created="${BUILD_DATE}"
 LABEL org.opencontainers.image.version="${BUILD_VERSION}"
 LABEL org.opencontainers.image.schema-version="${BUILD_VERSION}"
-LABEL org.opencontainers.image.url="https://docker.io/dockersrc/xorg"
-LABEL org.opencontainers.image.source="https://docker.io/dockersrc/xorg"
+LABEL org.opencontainers.image.url="https://hub.docker.com/r/casjaysdev/xorg"
 LABEL org.opencontainers.image.vcs-type="Git"
 LABEL org.opencontainers.image.revision="${GIT_COMMIT}"
 LABEL org.opencontainers.image.source="https://github.com/dockersrc/xorg"
